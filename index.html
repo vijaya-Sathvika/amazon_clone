@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7e7;
+        }
+        header {
+            background-color: #131a22;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin-left: 20px;*/
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #febd69;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .banner {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/980_AB_GIF_Wave03_SP_TopBanner_1242x450_1.jpg');
+    background-size: 88% auto;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+        }
+        .category {
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product .name {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product .price {
+            color: #b12704;
+            font-size: 20px;
+        }
+        footer {
+            background-color: #131a22;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlUhJcxWMb_xol16a26AzMzly_Anf71aSXYw&s" alt="Amazon Logo">
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products, brands, and more">
+        <button>Search</button>
+    </div>
+    <nav>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </nav>
+</header>
+<h1>    Welcome to Amazon - Shop Now!</h1>
+<div class="banner">
+
+    
+</div>
+
+<section class="categories">
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQms86ztNenllAv6jmP9QDq7qXv6remfnfc6Q&s" alt="Electronics" style="width: 100px;">
+        <h3>Electronics</h3>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSqkfhf4euhRS_11URVf3-zgRy2cmL4F8rDA&s" alt="Fashion" style="width: 100px;">
+        <h3>Fashion</h3>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sDtBHjnoSI-qalmm1CkEXqwvDMFB3SYLcw&s" alt="Home & Kitchen" style="width: 100px;">
+        <h3>Home & Kitchen</h3>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9ncvR4To2x7ebN2p9Apai3wrh83Wkp1a80ziN3XkYH2fEjGHoqO6Pny9f5iY0bOYRgg&usqp=CAU" alt="Books" style="width: 100px;">
+        <h3>Books</h3>
+    </div>
+</section>
+
+<section class="products">
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKH0E_-P_uuFTUrJWBNz2mVsX-65I4uhDcDA&s" alt="Product 1">
+        <div class="name">Product Name 1</div>
+        <div class="price">Rs.5000</div>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUvlFBr7SFq7gpISossftwxCFTnByvA1humiXNwYuM5DBuOA5JpQ42M3YSC-zX2e4TvU&usqp=CAU" alt="Product 2">
+        <div class="name">Product Name 2</div>
+        <div class="price">Rs.6000</div>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVn1DrU9CC9T58T0qpgEAUU8tKrp_61OBdg&s" alt="Product 3">
+        <div class="name">Product Name 3</div>
+        <div class="price">Rs.4000</div>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9D97O1gBLPh_CNy6sTmqYvttt1Oc3nXQVA&s" alt="Product 4">
+        <div class="name">Product Name 4</div>
+        <div class="price">Rs.700</div>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+</footer>
+
+</body>
+</html>
